@@ -7,6 +7,7 @@ const PROJECTS = [
     description:
       "Full stack ingestion and query service for Strava's run activity data, deployed on AWS.",
     stack: ['TYPESCRIPT / EXPRESS', 'POSTGRESQL', 'AWS EC2 DEPLOYMENT'],
+    github: 'https://github.com/Pabz-10/Running-Analytics-',
   },
   {
     time: 'FILE_02',
@@ -14,6 +15,7 @@ const PROJECTS = [
     description:
       "Collaborative filtering recommendation engine trained on Spotify's Million Playlist Dataset.",
     stack: ['PYTHON', 'SVD / KNN'],
+    github: 'https://github.com/Pabz-10/Discoverify',
   },
 ]
 
@@ -34,7 +36,14 @@ export default function SelectedWorks() {
             <div className="works-item" key={p.name}>
               <span className="works-time">{p.time}</span>
               <div>
-                <div className="works-name">{p.name}</div>
+                <a
+                  className="works-name"
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {p.name}
+                </a>
                 <p className="works-description">{p.description}</p>
                 <div className="works-stack">
                   {p.stack.map((s) => (

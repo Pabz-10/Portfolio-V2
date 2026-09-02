@@ -5,7 +5,14 @@ export default function Hero({ onEnter }) {
   return (
     <section className="hero">
       <div className="hero-topbar">
-        <span>PB // PROTOCOL 0.1</span>
+        <a
+          className="hero-resume-link"
+          href="/Pabil_Adhikari_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PB // RESUME PROTOCOL 0.1
+        </a>
         <span>STATUS: COMPILING&hellip;</span>
         <span>EST. 2026</span>
       </div>

@@ -14,10 +14,10 @@ export default function Contact() {
 
         <div className="contact-note">
           BASED IN VANCOUVER, BC. OPEN TO WINTER &amp; SUMMER 2027 SOFTWARE
-          ENGINEERING INTERNSHIPS. RESUME AND CONTACT DETAILS LINKED BELOW.
+          ENGINEERING INTERNSHIPS.
         </div>
 
-        <a className="contact-cta" href="mailto:hello@example.com">
+        <a className="contact-cta" href="mailto:pabil.adhikari11@gmail.com">
           GET IN TOUCH
         </a>
       </div>

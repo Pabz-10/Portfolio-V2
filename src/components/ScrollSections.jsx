@@ -15,7 +15,7 @@ export default function ScrollSections({ scrollTargetRef }) {
 
       <div className="scroll-sections-rail">
         <div className="scroll-sections-rail-sticky">
-          <Helix width={220} height={900} amplitude={92} rungCount={40} />
+          <Helix width={280} height={900} amplitude={120} rungCount={40} />
         </div>
       </div>
     </div>
