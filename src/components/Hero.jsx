@@ -5,14 +5,25 @@ export default function Hero({ onEnter }) {
   return (
     <section className="hero">
       <div className="hero-topbar">
-        <a
-          className="hero-resume-link"
-          href="/Pabil_Adhikari_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          PA // RESUME PROTOCOL 0.1
-        </a>
+        <span className="hero-topbar-links">
+          <a
+            className="hero-resume-link"
+            href="https://www.linkedin.com/in/pabil/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LINKEDIN
+          </a>
+          {' // '}
+          <a
+            className="hero-resume-link"
+            href="/Pabil_Adhikari_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RESUM&Eacute;
+          </a>
+        </span>
         <span>STATUS: COMPILING&hellip;</span>
         <span>EST. 2026</span>
       </div>

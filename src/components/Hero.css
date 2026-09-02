@@ -90,9 +90,7 @@
 
 @media (max-width: 720px) {
   .hero-helix {
-    max-width: 55vw;
-    left: 50%;
-    opacity: 0.85;
+    display: none;
   }
   .hero-copy {
     max-width: 300px;

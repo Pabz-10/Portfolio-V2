@@ -26,3 +26,10 @@
   letter-spacing: 0;
   color: var(--text);
 }
+
+@media (max-width: 720px) {
+  .trajectory-meta {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
