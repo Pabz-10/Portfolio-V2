@@ -11,9 +11,18 @@
   color: var(--text);
 }
 
-.trajectory-phonetic {
-  margin-top: 16px;
-  font-size: 14px;
+.trajectory-meta {
+  display: flex;
+  gap: 64px;
+  margin-top: 32px;
+}
+
+.trajectory-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 24px;
   font-weight: 400;
-  color: var(--text-meta);
+  letter-spacing: 0;
+  color: var(--text);
 }

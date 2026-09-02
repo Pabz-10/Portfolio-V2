@@ -12,26 +12,25 @@ export default function Hero({ onEnter }) {
 
       <div className="hero-copy">
         <h1>
-          REWRITING
+          PABIL'S
           <br />
-          THE CODE
+          CENTRAL
           <br />
-          OF BIOLOGY
+          DOGMA
         </h1>
         <p>
-          A molecular biology background, rebuilt as software &mdash; an MSCS at CU
-          Boulder and a search for a Winter 2027 engineering internship.
+          Molecular Biology &rarr; Computer Science &rarr; Software Engineering.
         </p>
       </div>
 
       <div className="hero-helix">
-        <Helix width={260} height={780} amplitude={108} rungCount={42} />
+        <Helix width={340} height={780} amplitude={140} rungCount={42} />
       </div>
 
       <span className="hero-access">ACCESS TERMINAL</span>
 
       <button className="hero-enter" onClick={onEnter}>
-        ENTER LAB &mdash;
+        RUN BUILD &mdash;
       </button>
     </section>
   )
