@@ -5,12 +5,12 @@
 .works-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 40px;
+  gap: 200px;
 }
 
 .works-title {
-  font-size: clamp(30px, 3.5vw, 44px);
-  font-weight: 900;
+  font-size: clamp(36px, 4.5vw, 60px);
+  font-weight: 600;
   line-height: 1;
   letter-spacing: -0.01em;
   color: var(--text);
@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 20px;
-  margin-bottom: 36px;
+  margin-bottom: 90px;
 }
 
 .works-item:last-child {
@@ -40,16 +40,16 @@
 .works-name {
   font-style: italic;
   font-weight: 400;
-  font-size: 17px;
-  margin-bottom: 8px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .works-description {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--text);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .works-stack {
@@ -59,8 +59,15 @@
   line-height: 1.9;
 }
 
+@media (max-width: 900px) {
+  .works-grid {
+    gap: 60px;
+  }
+}
+
 @media (max-width: 720px) {
   .works-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }

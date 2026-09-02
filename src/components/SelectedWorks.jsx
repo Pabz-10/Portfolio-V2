@@ -2,17 +2,17 @@ import './SelectedWorks.css'
 
 const PROJECTS = [
   {
-    time: '01:00',
+    time: 'FILE_01',
     name: 'Running Analytics API',
     description:
-      'Full-stack ingestion and query service for run activity data, deployed on AWS.',
+      "Full stack ingestion and query service for Strava's run activity data, deployed on AWS.",
     stack: ['TYPESCRIPT / EXPRESS', 'POSTGRESQL', 'AWS EC2 DEPLOYMENT'],
   },
   {
-    time: '02:45',
+    time: 'FILE_02',
     name: 'Discoverify',
     description:
-      "Collaborative-filtering recommendation engine trained on Spotify's Million Playlist Dataset.",
+      "Collaborative filtering recommendation engine trained on Spotify's Million Playlist Dataset.",
     stack: ['PYTHON', 'SVD / KNN'],
   },
 ]
@@ -24,7 +24,9 @@ export default function SelectedWorks() {
         <h2 className="works-title">
           SELECTED
           <br />
-          WORKS V.1
+          WORK
+          <br />
+          V. 1.0
         </h2>
 
         <div className="works-list">

@@ -3,27 +3,54 @@
   position: relative;
 }
 
+.contact-top {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: 200px;
+  row-gap: 24px;
+  align-items: center;
+}
+
 .contact-note {
-  font-size: 11px;
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 16px;
   font-weight: 400;
-  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  color: var(--text);
   line-height: 1.7;
   max-width: 340px;
-  margin-bottom: 90px;
+}
+
+@media (max-width: 900px) {
+  .contact-top {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .contact-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .contact h2 {
-  font-size: clamp(40px, 6vw, 60px);
+  grid-column: 1;
+  grid-row: 1;
+  font-size: clamp(56px, 8vw, 96px);
   font-weight: 900;
   line-height: 0.92;
   letter-spacing: -0.02em;
   color: var(--text);
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 .contact-cta {
+  grid-column: 1;
+  grid-row: 2;
   display: inline-block;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 400;
   color: var(--text);
   text-decoration: none;
