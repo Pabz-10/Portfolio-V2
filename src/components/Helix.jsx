@@ -8,8 +8,8 @@ import { useEffect, useRef } from 'react'
  * - Small vertical "loop" offset at the crossing so it reads as a twist-through
  *   rather than a flat pinch.
  * - Color/size on each letter is a continuous function of position (no hard
- *   swap), and the color cycle runs 3x faster than the position cycle so each
- *   side shows multiple dark/light passes rather than one long block each.
+ *   swap), tied to the same cycle as the crossing itself so each side reads
+ *   as one long dark pass and one long light pass per twist.
  *
  * Props:
  *  - width, height: viewBox dimensions (px)
@@ -37,7 +37,7 @@ export default function Helix({
     const cx = width / 2
     const period = height
     const loopMag = Math.max(6, amplitude * 0.1)
-    const colorCycles = 3
+    const colorCycles = 1
     const bases = ['A', 'T', 'C', 'G']
     const comp = { A: 'T', T: 'A', C: 'G', G: 'C' }
     const lineColor = '#D9D7CC'
