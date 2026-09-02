@@ -11,7 +11,7 @@ export default function Hero({ onEnter }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          PB // RESUME PROTOCOL 0.1
+          PA // RESUME PROTOCOL 0.1
         </a>
         <span>STATUS: COMPILING&hellip;</span>
         <span>EST. 2026</span>

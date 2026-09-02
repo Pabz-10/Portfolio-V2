@@ -18,7 +18,7 @@ export default function RefactoredTrajectory() {
       </h2>
       <div className="trajectory-meta">
         <div className="trajectory-meta-col">
-          <span>EST. 2026</span>
+          <span>EXP. 2028</span>
           <span>CU BOULDER</span>
         </div>
         <div className="trajectory-meta-col">
