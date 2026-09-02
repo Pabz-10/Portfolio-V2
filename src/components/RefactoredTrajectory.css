@@ -1,0 +1,19 @@
+.trajectory {
+  padding: 120px 0 80px;
+}
+
+.trajectory h2 {
+  font-size: clamp(72px, 13vw, 210px);
+  font-weight: 900;
+  line-height: 0.86;
+  letter-spacing: -0.02em;
+  max-width: 1150px;
+  color: var(--text);
+}
+
+.trajectory-phonetic {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-meta);
+}

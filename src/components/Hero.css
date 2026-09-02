@@ -1,0 +1,88 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 28px var(--gutter);
+  overflow: hidden;
+}
+
+.hero-topbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-meta);
+}
+
+.hero-copy {
+  position: absolute;
+  top: max(100px, 12vh);
+  left: var(--gutter);
+  max-width: 340px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(32px, 4.5vw, 44px);
+  line-height: 0.98;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.hero-copy p {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.hero-helix {
+  position: absolute;
+  top: 6.5%;
+  left: 52%;
+  transform: translateX(-50%);
+  height: 96%;
+  width: 260px;
+  max-width: 32vw;
+}
+
+.hero-helix svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-access {
+  position: absolute;
+  bottom: 88px;
+  right: var(--gutter);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-meta);
+}
+
+.hero-enter {
+  position: absolute;
+  bottom: 24px;
+  right: var(--gutter);
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--text);
+  transition: opacity 0.15s ease;
+}
+
+.hero-enter:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 720px) {
+  .hero-helix {
+    max-width: 55vw;
+    left: 50%;
+    opacity: 0.85;
+  }
+  .hero-copy {
+    max-width: 220px;
+  }
+}
