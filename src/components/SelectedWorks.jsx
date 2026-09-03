@@ -14,7 +14,7 @@ const PROJECTS = [
     name: 'Discoverify',
     description:
       "Collaborative filtering recommendation engine trained on Spotify's Million Playlist Dataset.",
-    stack: ['PYTHON', 'SVD / KNN'],
+    stack: ['PYTHON', 'FLASK', 'SVD / KNN'],
     github: 'https://github.com/Pabz-10/Discoverify',
   },
 ]
